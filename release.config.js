@@ -1,5 +1,3 @@
-const { execSync } = require('child_process');
-
 module.exports = {
     branches: ['main'],
     plugins: [
