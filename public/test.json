@@ -1,0 +1,162 @@
+{
+    "type": "form",
+    "store": {
+        "firstname": {
+            "type": "string",
+            "default": ""
+        },
+        "prefixes": {
+            "type": "string",
+            "default": ""
+        },
+        "lastname": {
+            "type": "string",
+            "default": "Doe"
+        },
+        "currentPage": {
+            "type": "number",
+            "default": 1
+        },
+        "formValid": {
+            "type": "boolean",
+            "default": true
+        }
+    },
+    "forms": [
+        {
+            "id": "skjb",
+            "visible": "currentPage.value === 1",
+            "title": "Welkom",
+            "icon": "home",
+            "fieldsets": [
+                {
+                    "title": "My fieldset",
+                    "id": "kdnq",
+                    "properties": {
+                        "visible": "currentPage.value === 1"
+                    },
+                    "elements": [
+                        {
+                            "type": "BldcInput",
+                            "id": "laon",
+                            "properties": {
+                                "model": "firstname",
+                                "ariaLabel": "string",
+                                "elemId": "my-id",
+                                "elementDisabled": false,
+                                "helpButton": true,
+                                "inputType": "text",
+                                "invalid": false,
+                                "name": "firstname",
+                                "outerErrorMessage": "Vul uw naam in",
+                                "placeholder": "Uw naam",
+                                "readonly": false,
+                                "required": true,
+                                "elementLabel": "My label",
+                                "helpText": "This is some helptext.",
+                                "visible": true
+                            }
+                        },
+                        {
+                            "type": "BldcInput",
+                            "id": "oqng",
+                            "properties": {
+                                "model": "lastname",
+                                "ariaLabel": "string",
+                                "elemId": "my-id",
+                                "elementDisabled": false,
+                                "helpButton": true,
+                                "inputType": "text",
+                                "invalid": false,
+                                "name": "lastname",
+                                "outerErrorMessage": "Vul uw naam in",
+                                "placeholder": "Uw naam",
+                                "readonly": false,
+                                "required": true,
+                                "elementLabel": "Hello {store.firstname}",
+                                "helpText": "This is some helptext.",
+                                "visible": "firstname.value === 'Jo'"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dkws",
+            "visible": "currentPage.value === 2",
+            "title": "Resultaat",
+            "icon": "check",
+            "fieldsets": [
+                {
+                    "title": "My fieldset",
+                    "id": "slqj",
+                    "properties": {
+                        "visible": true
+                    },
+                    "elements": [
+                        {
+                            "type": "BldcInput",
+                            "id": "swqr",
+                            "properties": {
+                                "model": "prefixes",
+                                "ariaLabel": "string",
+                                "elemId": "prefixes",
+                                "elementDisabled": false,
+                                "helpButton": true,
+                                "inputType": "text",
+                                "invalid": false,
+                                "name": "prefixes",
+                                "outerErrorMessage": "Vul uw naam in",
+                                "placeholder": "Uw naam",
+                                "readonly": false,
+                                "required": true,
+                                "elementLabel": "My label",
+                                "helpText": "This is some helptext.",
+                                "visible": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "qdkn",
+            "visible": "currentPage.value === 3",
+            "title": "Resultaat",
+            "icon": "check",
+            "fieldsets": [
+                {
+                    "title": "My fieldset",
+                    "id": "skmq",
+                    "properties": {
+                        "visible": true
+                    },
+                    "elements": [
+                        {
+                            "type": "BldcInput",
+                            "id": "oqmv",
+                            "properties": {
+                                "model": "lastname",
+                                "ariaLabel": "string",
+                                "elemId": "lastname",
+                                "elementDisabled": false,
+                                "helpButton": true,
+                                "inputType": "text",
+                                "invalid": false,
+                                "name": "lastname",
+                                "outerErrorMessage": "Vul uw naam in",
+                                "placeholder": "Uw naam",
+                                "readonly": false,
+                                "required": true,
+                                "elementLabel": "My label",
+                                "helpText": "This is some helptext.",
+                                "visible": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

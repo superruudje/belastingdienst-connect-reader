@@ -1,0 +1,36 @@
+{
+  "name": "belastingdienst-connect-reader",
+  "version": "0.0.1",
+  "description": "A Vue 3-based custom element for rendering dynamic form configurations using JSON. Compatible with any web app or framework.",
+  "main": "dist/belastingdienst-connect-reader.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "pinia": "^3.0.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@belastingdienst/bld-icon-font": "file:src/packages/bld-icon-font-1.2.322.tgz",
+    "@belastingdienst/bldc-components": "file:src/packages/bldc-components-3.7.1.tgz",
+    "@belastingdienst/bldc-components-vue3": "file:src/packages/bldc-components-vue3-3.7.1.tgz",
+    "@belastingdienst/bold-themes": "file:src/packages/bold-themes-1.0.4.tgz",
+    "@belastingdienst/rofonts": "file:src/packages/rofonts-1.0.2.tgz",
+    "@vueuse/core": "^13.0.0",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.2.5",
+    "vite-plugin-css-injected-by-js": "^3.5.2"
+  },
+  "keywords": [
+    "web-component",
+    "custom-element",
+    "vue"
+  ],
+  "author": "Rudi Haamke",
+  "license": "MIT",
+  "type": "module"
+}
